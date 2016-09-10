@@ -106,6 +106,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="back-the-blue.jpg" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
