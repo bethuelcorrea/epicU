@@ -36,6 +36,30 @@ int myInteger = int.Parse(myString);
 More: http://is.gd/datatype_conversion
 
 
+Arithemetic  Operators (cs-asp-009)
+= Not equality, its assignment
+
+math Operators: +-*/
+
+addition assignment
+total = Total +5
+total += 5;
+
+Increment Operator: 1++:
+Decrement Operator: 1--;
+
+Beware of order of precedence (use parenthesis)
+Beware of down casting (you'll lose precision)
+Beware of overflow(user bigger types)
+
+to make overflow throw an exeption:
+
+{
+//some arithmetic operation
+//that could potentially overflow
+}
+
+
 
 
 
