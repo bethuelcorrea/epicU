@@ -59,8 +59,21 @@ to make overflow throw an exeption:
 //that could potentially overflow
 }
 
+c# syntex (cs-asp_010)
 
+operands- variable names, object/server control names, literals - "nouns" (you name these)
 
+operators -"verbs...they act on the operands.
+
+htpp://is.gd/operators
+
+Expressions one or more operands and zero or more operators
+that evaluate to a single value
+
+http://is.gd/expressions
+
+statements a complete instruction - assigment of an 
+expression.
 
 
 
