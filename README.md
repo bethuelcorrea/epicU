@@ -36,12 +36,13 @@ int myInteger = int.Parse(myString);
 More: http://is.gd/datatype_conversion
 
 
-Arithemetic  Operators (cs-asp-009)
+Arithmetic  Operators (CS-ASP-009)
+=======================================================================
 = Not equality, its assignment
 
-math Operators: +-*/
+Math Operators: +-*/
 
-addition assignment
+Addition Assignment
 total = Total +5
 total += 5;
 
@@ -59,21 +60,27 @@ to make overflow throw an exeption:
 //that could potentially overflow
 }
 
-c# syntex (cs-asp_010)
+c# Syntex (CS-ASP_010)
+===============================================================================
 
-operands- variable names, object/server control names, literals - "nouns" (you name these)
+Operands- variable names, object/server control names, literals - "nouns" (you name these)
 
-operators -"verbs...they act on the operands.
+Operators -"verbs...they act on the operands.
 
 htpp://is.gd/operators
 
-Expressions one or more operands and zero or more operators
+Expressions One or more operands and zero or more operators
 that evaluate to a single value
 
 http://is.gd/expressions
 
-statements a complete instruction - assigment of an 
-expression.
+statements - A complete instruction - assigment of an 
+expression to a variable, an increment/decremen, etc.
+
+http://is.gd/statement
+
+Statements must end in a semi-colon;
+whitespace is ignored (use for humans)
 
 
 
