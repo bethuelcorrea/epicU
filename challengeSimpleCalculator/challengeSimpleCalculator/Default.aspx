@@ -9,10 +9,11 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+          FirstValue:
         <asp:TextBox ID="firstnumTextBox1" runat="server"></asp:TextBox>
         <br />
         <br />
+        SecondValue:
         <asp:TextBox ID="secondNumberTextBox2" runat="server"></asp:TextBox>
         <br />
         <br />

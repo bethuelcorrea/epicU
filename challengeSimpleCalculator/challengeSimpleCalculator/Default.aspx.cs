@@ -16,11 +16,13 @@ namespace challengeSimpleCalculator
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Double firstnumber = Convert.ToDouble (firstnumTextBox1.Text);
-            Double Secondnumber = Convert.ToDouble(secondNumberTextBox2.Text);
 
-            Double result = firstnumber + Secondnumber;
-            lbltxt.Text = result.ToString();
+                Double firstnumber = Convert.ToDouble(firstnumTextBox1.Text);
+                Double Secondnumber = Convert.ToDouble(secondNumberTextBox2.Text);
+
+                Double result = firstnumber + Secondnumber;
+            
+                lbltxt.Text = result.ToString();
 
         }
 
