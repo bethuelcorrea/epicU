@@ -110,6 +110,10 @@ if(a==b){//some code}
 else if (a==c){//some code gos here}
 
 
+Conditional Ternary operatoor(sc-asp_012)
+==========================================================
+
+result = (a == b)? "equal":"not equal";
 
 
 
