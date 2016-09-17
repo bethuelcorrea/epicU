@@ -93,6 +93,22 @@ This is a link for my website
 http://432-bethuel.vm.epicservers.com/betwebsite/
 type inet in the start____> to bring up internet information service manager.
 
+c# Syntex (CS-ASP_011)
+===============================================================================
+= assignment
+== equality
+
+if(a == b){
+//execute when the expression is true
+}else{
+//execute when the expression is false
+}
+
+
+... or ... evalutate other mutaully exclusively options:
+if(a==b){//some code}
+else if (a==c){//some code gos here}
+
 
 
 
