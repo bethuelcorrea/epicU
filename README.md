@@ -175,7 +175,7 @@ AND fractioal values representing
 "left overs",
 
 MyTimeSpan.TotalDays //double
-MyTimeSpan.Totalhours//double
+MyTimeSpan.TotalHours//double
 
 
 
