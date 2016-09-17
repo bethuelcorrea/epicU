@@ -177,6 +177,22 @@ AND fractioal values representing
 MyTimeSpan.TotalDays //double
 MyTimeSpan.TotalHours//double
 
+formating Strings(sc-asp_019)
+==========================================================
+Concenate Strings
++ +=
 
+String.Format("Hello {0}. you are from{1}", "BET", "Belize");
 
+Format Numbers
+String.Format("Reference Code: {0:000_000-0}", 1234567);
+123_456-7
 
+Formatting Dates
+http://is.gd/formattingdates
+String.Format("Reference Date: {0:ddd-d,mm, yyyy}", someDate)
+tue - 5, 07, 2014
+
+formatting currency
+http://is.gd/formattingcurrency
+String.Format("Total:{0:c}, totalAmout);
