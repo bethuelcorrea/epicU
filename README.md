@@ -117,6 +117,26 @@ result = (a == b)? "equal":"not equal";
 
 
 
+Conditional Ternary operatoor(sc-asp_013)
+==========================================================
+comparision operators
+used for conditional statements
+==
+!=
+<>
+<=  >=
+!somBoolean Value - means not is true
+
+logical operators
+used to combine multiple expressions/ evaluation
+
+&& and
+|| or
+
+comvine with parenthesis () for order of precendence.
+
+
+
 
 
 
