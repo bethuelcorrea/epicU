@@ -156,6 +156,27 @@ myDateTime.Addminute(-5)
 "Chanining" = using multiple helper methods
 together with the dot. operater
 
+working with spans of Time s(sc-asp_014)
+==========================================================
+create and initialize new TimeSpans
+
+//Days.Hours:Minutes:Seconds.Milliseconds
+TimeSpan myTimeSpan = TimeSpan.Parse("1.2:3:30.5");
+
+DateTime myBirthday = DateTime.Parse("11/10/79");
+TimeSpan myAge = DateTime.Now.Subtract(myBirthday);
+
+More info at http://is.gd/timespan
+
+... or get TOTAL elapsed time
+as a double representing both
+the number of days / hours/ etc.
+AND fractioal values representing 
+"left overs",
+
+MyTimeSpan.TotalDays //double
+MyTimeSpan.Totalhours//double
+
 
 
 
