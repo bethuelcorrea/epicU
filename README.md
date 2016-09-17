@@ -93,7 +93,7 @@ This is a link for my website
 http://432-bethuel.vm.epicservers.com/betwebsite/
 type inet in the start____> to bring up internet information service manager.
 
-c# Syntex (CS-ASP_011)
+c# Syntex evaluate (CS-ASP_011)
 ===============================================================================
 = assignment
 == equality
@@ -116,6 +116,66 @@ Conditional Ternary operatoor(sc-asp_012)
 result = (a == b)? "equal":"not equal";
 
 
+
+Operators(sc-asp_013)
+==========================================================
+comparision operators
+used for conditional statements
+==
+!=
+<>
+<=  >=
+!somBoolean Value - means not is true
+
+logical operators
+used to combine multiple expressions/ evaluation
+
+&& and
+|| or
+
+comvine with parenthesis () for order of precendence.
+
+working with date s(sc-asp_014)
+==========================================================
+creating new DateTime objects
+DateTime myDateTime = DateTime.Now;
+DateTime myDateTime = DateTime("11/10/");
+
+Retrieving Parts:
+myDateTime.Year  //int
+myDateTime.Hours //int
+myDateTime.DayOfWeek //"Monday"
+myDateTime.DayOfWeek //"Monday"
+myDatetime.DayOfYear // int 173
+
+
+DateTime Math;
+MyDateTime.AddHour(3)
+myDateTime.Addminute(-5)
+
+"Chanining" = using multiple helper methods
+together with the dot. operater
+
+working with spans of Time s(sc-asp_014)
+==========================================================
+create and initialize new TimeSpans
+
+//Days.Hours:Minutes:Seconds.Milliseconds
+TimeSpan myTimeSpan = TimeSpan.Parse("1.2:3:30.5");
+
+DateTime myBirthday = DateTime.Parse("11/10/79");
+TimeSpan myAge = DateTime.Now.Subtract(myBirthday);
+
+More info at http://is.gd/timespan
+
+... or get TOTAL elapsed time
+as a double representing both
+the number of days / hours/ etc.
+AND fractioal values representing 
+"left overs",
+
+MyTimeSpan.TotalDays //double
+MyTimeSpan.TotalHours//double
 
 
 
