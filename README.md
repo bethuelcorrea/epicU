@@ -93,7 +93,7 @@ This is a link for my website
 http://432-bethuel.vm.epicservers.com/betwebsite/
 type inet in the start____> to bring up internet information service manager.
 
-c# Syntex (CS-ASP_011)
+c# Syntex evaluate (CS-ASP_011)
 ===============================================================================
 = assignment
 == equality
@@ -117,7 +117,7 @@ result = (a == b)? "equal":"not equal";
 
 
 
-Conditional Ternary operatoor(sc-asp_013)
+Operators(sc-asp_013)
 ==========================================================
 comparision operators
 used for conditional statements
@@ -135,7 +135,26 @@ used to combine multiple expressions/ evaluation
 
 comvine with parenthesis () for order of precendence.
 
+working with date s(sc-asp_014)
+==========================================================
+creating new DateTime objects
+DateTime myDateTime = DateTime.Now;
+DateTime myDateTime = DateTime("11/10/");
 
+Retrieving Parts:
+myDateTime.Year  //int
+myDateTime.Hours //int
+myDateTime.DayOfWeek //"Monday"
+myDateTime.DayOfWeek //"Monday"
+myDatetime.DayOfYear // int 173
+
+
+DateTime Math;
+MyDateTime.AddHour(3)
+myDateTime.Addminute(-5)
+
+"Chanining" = using multiple helper methods
+together with the dot. operater
 
 
 
