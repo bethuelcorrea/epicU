@@ -139,7 +139,10 @@ working with date s(sc-asp_014)
 ==========================================================
 creating new DateTime objects
 DateTime myDateTime = DateTime.Now;
-DateTime myDateTime = DateTime("11/10/");
+DateTime myDateTime = DateTime("11/10/1979");
+
+formatting ... many options:
+myDateTime.to_____()
 
 Retrieving Parts:
 myDateTime.Year  //int
@@ -154,7 +157,8 @@ MyDateTime.AddHour(3)
 myDateTime.Addminute(-5)
 
 "Chanining" = using multiple helper methods
-together with the dot. operater
+together with the dot . operater
+myDateTime.AddHour(3).AddMinute(-5).ToString();
 
 working with spans of Time s(sc-asp_014)
 ==========================================================
