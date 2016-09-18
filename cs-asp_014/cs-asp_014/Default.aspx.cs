@@ -34,8 +34,8 @@ namespace cs_asp_014
             // lbltext.Text = myValue.DayOfWeek.ToString();
             // lbltext.Text = myValue.DayOfYear.ToString();
 
-            DateTime myvalue = DateTime.Parse("11/10/1979");
-            //DateTime myvalue = new DateTime(1979, 12, 7, 6, 30, 0);
+            //DateTime myvalue = DateTime.Parse("11/10/1979");
+            DateTime myvalue = new DateTime(1979, 11, 10, 6, 30, 0);
             lbltext.Text = myvalue.ToLongDateString(); 
 
 

@@ -31,6 +31,24 @@ namespace cs_asp_017 {
         protected global::System.Web.UI.WebControls.TextBox firstInput;
         
         /// <summary>
+        /// phoneTextBox1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox phoneTextBox1;
+        
+        /// <summary>
+        /// ssTextBox2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ssTextBox2;
+        
+        /// <summary>
         /// myCalendar control.
         /// </summary>
         /// <remarks>

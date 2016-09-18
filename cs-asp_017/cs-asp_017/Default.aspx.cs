@@ -12,16 +12,20 @@ namespace cs_asp_017
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (!Page.IsPostBack) {
-            lbltext.Text = "some value";
-            myCalendar.SelectedDate = DateTime.Now.Date.AddDays(2);
+           // if (!Page.IsPostBack) {
+           // lbltext.Text = "some value";
+           // myCalendar.SelectedDate = DateTime.Now.Date.AddDays(2);
 
-            }
+           //}
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            lbltext.Text = firstInput.Text;
+        //lbltext.Text = firstInput.Text;
+
+        //
+
+
         }
     }
 }

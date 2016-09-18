@@ -10,7 +10,13 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:TextBox ID="firstInput" runat="server"></asp:TextBox>
+        Name<asp:TextBox ID="firstInput" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        phonenumber:<asp:TextBox ID="phoneTextBox1" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        SS<asp:TextBox ID="ssTextBox2" runat="server"></asp:TextBox>
         <br />
         <br />
         <br />
@@ -21,6 +27,8 @@
         <br />
         <br />
         <asp:Label ID="lbltext" runat="server"></asp:Label>
+        <br />
+        <br />
     
     </div>
     </form>
