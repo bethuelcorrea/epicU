@@ -16,8 +16,12 @@ namespace cs_asp_015
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+
+            //http://is.gd/timespan
+            //Days.Hours:Minutes:Seconds.Milliseconds
             TimeSpan myTimeSpan = TimeSpan.Parse("1.2:3:30.5");
 
+            //day from my birthday until Now
             DateTime MyBirthday = DateTime.Parse("11/10/79");
             TimeSpan myAge = DateTime.Now.Subtract(MyBirthday);
 

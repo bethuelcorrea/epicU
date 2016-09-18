@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
     <div>
     
-        some text<br />
+        working with time (TimeSpan)<br />
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
         <br />
