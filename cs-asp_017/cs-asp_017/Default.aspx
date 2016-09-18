@@ -10,17 +10,13 @@
     <form id="form1" runat="server">
     <div>
     
-        Name<asp:TextBox ID="firstInput" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        phonenumber:<asp:TextBox ID="phoneTextBox1" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        SS<asp:TextBox ID="ssTextBox2" runat="server"></asp:TextBox>
+        Name<asp:TextBox ID="firstInput" runat="server">name</asp:TextBox>
         <br />
         <br />
         <br />
-        <asp:Calendar ID="myCalendar" runat="server"></asp:Calendar>
+        <asp:Calendar ID="myCalendar" runat="server" SelectedDate="2016-09-19" VisibleDate="2016-09-17">
+            <TodayDayStyle BackColor="Red" />
+        </asp:Calendar>
         <br />
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="ok" />
