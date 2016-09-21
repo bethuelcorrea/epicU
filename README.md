@@ -224,3 +224,26 @@ more indexes(in dimensions) to get to the element.
 
 double[,] myArray = new double[2,3]
 
+formating Strings(sc-asp_023)
+==========================================================
+Arrays are imutable = cannot be changed in memory
+HOWEVER. .NET   Framework providers helper methods to 
+resize an array ... creates a new array and cpies
+the old values into it.
+
+Array.Resize (ref myArray, myArray.Length +1);
+
+//Get the highest index;
+int highestIndex = myArray.GetUppperBound(0);
+// 0 = dimension we want to retrieve the
+//upper boundary for
+
+//Arrays have other helper methods
+myArray.Sum()
+myArray.Min()
+myArray.Max()
+myArray.Average()
+myArray.Short()
+myArray.
+
+
