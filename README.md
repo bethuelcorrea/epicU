@@ -200,3 +200,25 @@ tue - 5, 07, 2014
 formatting currency
 http://is.gd/formattingcurrency
 String.Format("Total:{0:c}, totalAmout);
+
+formating Strings(sc-asp_021)
+==========================================================
+Inexes vs Elements
+Accessor vs Stored values
+Indexes are Zero based
+
+Declaring Arrays
+string[] myArray = new string[3];
+
+Declaring and Initializing Arrays
+string[] myArray = new string[3]{"moe","larry","curly"};
+
+Setting/ Getting values
+string mystring = myArray[1];//Retrieve the second element
+myArray[0] = myString// Sets first element
+
+formating Strings(sc-asp_022)
+==========================================================
+Same as single dimensioal... just requires
+more indexes(in dimensions) to get to the element.
+
