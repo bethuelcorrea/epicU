@@ -222,3 +222,5 @@ formating Strings(sc-asp_022)
 Same as single dimensioal... just requires
 more indexes(in dimensions) to get to the element.
 
+double[,] myArray = new double[2,3]
+
