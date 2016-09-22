@@ -16,6 +16,8 @@ namespace CS_ASP_021
 
         protected void addButton_Click(object sender, EventArgs e)
         {
+
+
             /*
            string[] values = new string[5];
            values[0] = TextBox1.Text;
@@ -27,6 +29,7 @@ namespace CS_ASP_021
 
             //resultLabel.Text = values[2];
             //resultLabel.Text = values.Length.ToString();
+           
 
             string[] values = new string[5] { "Bob", "Steve", "Chuck", "Briand", "Andy" };
             //values[5] = "Andrew";
@@ -36,6 +39,7 @@ namespace CS_ASP_021
 
         protected void retrieveButton_Click(object sender, EventArgs e)
         {
+
             string[] values = (string[])ViewState["MyValues"];
             TextBox1.Text = values[0];
             TextBox2.Text = values[1];
@@ -44,7 +48,7 @@ namespace CS_ASP_021
             TextBox5.Text = values[4];
             //TextBox1.Text = values[5];
 
-            resultLabel.Text = "Values retrieved ... ";
+           // resultLabel.Text = "Values retrieved ... ";
         }
     }
 }

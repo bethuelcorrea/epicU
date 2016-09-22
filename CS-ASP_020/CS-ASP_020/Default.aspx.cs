@@ -20,7 +20,7 @@ namespace CS_ASP_020
         protected void Button1_Click(object sender, EventArgs e)
         {
             string value = ViewState["MyValue"].ToString();
-            value += serverControl.Text + "";
+            value += serverControl.Text + " ";
             ViewState["MyValue"] = value;
             lbltext.Text = value;
             serverControl.Text = "";
