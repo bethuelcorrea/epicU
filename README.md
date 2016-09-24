@@ -243,7 +243,37 @@ myArray.Sum()
 myArray.Min()
 myArray.Max()
 myArray.Average()
-myArray.Short()
-myArray.
+
+
+Array.Short(myArray)
+Array.Reverse(myArray)
+
+formating Strings(sc-asp_026)
+==========================================================
+
+snippet: for TAB TAB on keyboard to get the for loop structure
+
+for(in i; i < 10;i++)
+{
+//your code
+}
+i any variable name
+
+1st - counter declaration, can be initialized to any number
+2nd - condition, can be any expression taht equates to a bool
+3rd- increament i++/ decreament i--, can step more than 1 using +=,
+
+sting[] names = new string[]{"wolverine", "cyclops", "professor x"};
+
+for(int 1 =0; i<names.Length;i++)
+{
+  //can search for a specific value
+  if(names[i] == "professor x")
+  {
+  //do something
+  can break out of additional iterations.
+  break;
+  }
+}
 
 
