@@ -267,12 +267,13 @@ sting[] names = new string[]{"wolverine", "cyclops", "professor x"};
 
 for(int 1 =0; i<names.Length;i++)
 {
-if(name[i]=="professor x")
-{
-//do something
-can break out of additional iterations.
-break;
-}
+  //can search for a specific value
+  if(names[i] == "professor x")
+  {
+  //do something
+  can break out of additional iterations.
+  break;
+  }
 }
 
 
