@@ -277,3 +277,24 @@ for(int 1 =0; i<names.Length;i++)
 }
 
 
+
+looping with the wile and do while Iteration Statements(sc-asp_027)
+==========================================================
+Random Random = new Random();
+// random.Next(lowerBounds, upperBounds)
+random.Next(1, 100);// returns a value between 1 - 100
+
+if some Expression is already false, this will never execute
+while(someExpession)
+{
+//code that would affect whether
+//someExpression is true or false
+}
+//if some Expression is already false, the will run least once
+do{
+// code goes here..
+
+}
+
+
+
