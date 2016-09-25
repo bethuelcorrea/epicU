@@ -277,3 +277,62 @@ for(int 1 =0; i<names.Length;i++)
 }
 
 
+
+looping with the wile and do while Iteration Statements(sc-asp_027)
+==========================================================
+Random Random = new Random();
+// random.Next(lowerBounds, upperBounds)
+random.Next(1, 100);// returns a value between 1 - 100
+
+if some Expression is already false, this will never execute
+while(someExpession)
+{
+//code that would affect whether
+//someExpression is true or false
+}
+//if some Expression is already false, the will run least once
+do{
+// code goes here..
+
+}
+
+Creating overloaded methods(sc-asp_031)
+==================================================
+different Method signature, but sam basic function.
+Method signature... the number and type of parameters
+can have different returne types.
+
+
+Creating optional parameters (CS_ASP_032)
+=================================================
+Optioal parameters provided default values when you define
+the method, so if you dont supply a value, the default 
+will be used.
+
+private void my myMethod(string myRequiredParam, 
+                        int myOptioalParam = 1,
+                        int myOtherOptionalParam)
+                        
+
+Passing Named Arguments into input parameters(CS-ASP_033) 
+=============================================================
+Allow us to send in parameter arguments out of order!
+we just previx the input parameter argument with the  name
+of the parameter we're passing in , a colon, then the value:
+
+myMethod(myOtherOptionalParam:500,
+myRequireParam: "Hello Required param",
+myOptioalParam: 100);
+
+//you still have to pass in required parameters
+
+Creating methods with ouput parameters - (CS-ASP_034)
+=============================================================
+Allows you to return a value the normal way AND
+return a value via a method parameter:
+
+private bool myMethod(string myRequiredParam,
+out int myOptionalParam){}
+
+int myValue = );
+if(myMethod("Some required"))
