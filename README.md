@@ -315,7 +315,7 @@ private void my myMethod(string myRequiredParam,
                         
 
 Passing Named Arguments into input parameters(CS-ASP_033) 
-=============================================================
+=======================================================
 Allow us to send in parameter arguments out of order!
 we just previx the input parameter argument with the  name
 of the parameter we're passing in , a colon, then the value:
@@ -336,3 +336,12 @@ out int myOptionalParam){}
 
 int myValue = );
 if(myMethod("Some required"))
+
+Manipulating String (CS-ASP_035)
+--------------------------------------
+// escaping double quotes
+String myString = "This is a double quote: \".";
+
+//accessing  a specific 
+
+
