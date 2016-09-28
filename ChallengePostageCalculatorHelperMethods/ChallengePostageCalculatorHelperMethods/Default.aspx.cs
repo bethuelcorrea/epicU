@@ -28,8 +28,8 @@ namespace ChallengePostageCalculatorHelperMethods
                 return;
             if (!Double.TryParse(heightTextBox2.Text, out height))
                 return;
-            if (!Double.TryParse(lengthTextBox3.Text, out length))
-                return;
+            if (!Double.TryParse(lengthTextBox3.Text, out length))length=1 ;
+               // return;
 
             double result = (width * height * length) * shipping;
 
