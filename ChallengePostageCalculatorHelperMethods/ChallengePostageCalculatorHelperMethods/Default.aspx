@@ -21,11 +21,11 @@
         length<asp:TextBox ID="lengthTextBox3" runat="server" AutoPostBack="True"></asp:TextBox>
         <br />
         <br />
-        <asp:RadioButton ID="groundRadioButton1" runat="server" AutoPostBack="True" GroupName="shipOptions" Text="Ground" />
+        <asp:RadioButton ID="groundRadioButton1" runat="server" AutoPostBack="True" GroupName="shipOptions" Text="Ground" OnCheckedChanged="groundRadioButton1_CheckedChanged" />
         <br />
-        <asp:RadioButton ID="airRadioButton2" runat="server" AutoPostBack="True" GroupName="shipOptions" Text="Air" />
+        <asp:RadioButton ID="airRadioButton2" runat="server" AutoPostBack="True" GroupName="shipOptions" Text="Air" OnCheckedChanged="airRadioButton2_CheckedChanged" />
         <br />
-        <asp:RadioButton ID="nextDayRadioButton3" runat="server" AutoPostBack="True" GroupName="shipOptions" Text="Next Day" />
+        <asp:RadioButton ID="nextDayRadioButton3" runat="server" AutoPostBack="True" GroupName="shipOptions" Text="Next Day" OnCheckedChanged="nextDayRadioButton3_CheckedChanged" />
         <br />
         <br />
         <asp:Label ID="lbltext" runat="server"></asp:Label>
