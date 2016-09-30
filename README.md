@@ -315,7 +315,7 @@ private void my myMethod(string myRequiredParam,
                         
 
 Passing Named Arguments into input parameters(CS-ASP_033) 
-=============================================================
+=======================================================
 Allow us to send in parameter arguments out of order!
 we just previx the input parameter argument with the  name
 of the parameter we're passing in , a colon, then the value:
@@ -336,3 +336,71 @@ out int myOptionalParam){}
 
 int myValue = );
 if(myMethod("Some required"))
+
+Manipulating String (CS-ASP_035)
+--------------------------------------
+// escaping double quotes
+String myString = "This is a double quote: \".";
+
+//accessing  a specific char:
+myString[2]
+
+//StartsWith(), Endswith(), Contains()
+//check to see if a given string has a set of
+//characters beginng, end or somewhere inside.
+//Return true/false
+
+//IndexOf()
+//Find the index for one string has a set of
+//another string.
+int myIndex = myString.IndexOf("howdy");
+
+Index(), Remove()
+//Insert adds characters starting at a given index
+//Remove remves characters starting at a given
+//index, and all the way through the length you
+//input.
+//Substring()
+//Retrieve characters beginning at a given index
+//all thr way through the length you input.
+
+//Trim(), TrimStart(), TrimEnd()
+//Remove space characters both, or just the start
+//or the end of the string.
+
+//PadLeft(),PadRight()
+//Allow you to specify a length for a string
+//and a character to pad the string with if its
+//length is less than the specified length.
+myString = someValue.PadLeft(10, '#');
+
+//Notice that we'reinputting a chr, not a string
+//therefore we have to use a single quote not
+//a double quote.
+
+//ToUpper(), ToLower()
+//Important! Compare two strings regardless of 
+//the case, beacuse in C#, Two strings with
+//different cases are Not equal.
+
+//Replace()
+Replace every occurance of on string with
+//come other string.
+myString.Replace("$$$", myValue)
+
+//Split()
+//Take a string and split it into may strings
+//and store them in a string array
+string[] names = myString.Split(';');
+
+//Concatenating strings, immutablility
+//StringBuilder - memory efficient way of concatenation strings
+
+
+
+
+
+
+
+
+
