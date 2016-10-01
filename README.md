@@ -396,7 +396,14 @@ string[] names = myString.Split(';');
 //Concatenating strings, immutablility
 //StringBuilder - memory efficient way of concatenation strings
 
-
+Instroduction to classes and Objects (CS-ASP_036)
+======================================================
+Class is acode block that defines a date type.
+An Object is an instance of a Class
+Metaphors:
+Blueprint vs Houses
+Recipe vs cupcakes
+Pattern
 
 
 
