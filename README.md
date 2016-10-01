@@ -405,6 +405,54 @@ Blueprint vs Houses
 Recipe vs cupcakes
 Pattern
 
+Creating Class Files, Creating cohesive Classes and Code Navigation(cs-ASP_037)
+==================================
+prefer more classes w/ narrowly defined responsibilities
+prefer to pu each class in its own file
+Prefer high cohession - similarity / sigleness of purpose of the class members
+To achieve high cohesion, a rule of thub:try to make your classes fit on
+one screen of your IDE(no scorlling required)
+
+understanding Object Refarences and Object Lifetim(cs-ASP_038)
+An object reference variable holds a reference to an instantied object
+in the computers memory.
+
+MyClass myObject;
+
+The new keyword creates an instance of the class and returns the address of 
+object in memory to the refernce variable.
+
+//myObject = new MyClass();
+mor than one object reference variable can hold an address to the object in memory.
+
+MyClass myOtherObjectReference = myObject;
+Each time a new reference is added, the reference count increases by one. each time
+an object refererence variable goes out of scope or is set to null, the reference
+count decreases by one
+
+if the reference count is zero, the .NET Framework Run
+
+Understanding the .NET Framework and Compilation(CS-ASP_039)
+the .NET Framework consists of:
+
+-Runtime(Common Language Runtime, CLR) :"protective bubble", manages memory,
+protects the users machine, etc.
+
+.Net Framework Class Library(fcl, Base Class Library, BCL) thousands
+of classes built by Microsoft for every imaginable purpose.
+
+Compilers (C# compiler, VB compiler)- turns your human readable source code into 
+(.exe executable, or .dll - class library)
+
+many other tools and features
+
+Initial compilation to intermediate language, then a secon compilation
+just in time comilation an optimized version of the assembly for the.
+
+
+
+
+
 
 
 
