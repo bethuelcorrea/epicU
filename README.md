@@ -402,8 +402,47 @@ Class is acode block that defines a date type.
 An Object is an instance of a Class
 Metaphors:
 Blueprint vs Houses
-Recipe vs cupcakes
-Pattern
+Recipe vs Cupcakes
+Pattern vs Bluejeans
+Cookie vs. Cookes
+
+Classes have members, like properties and Methods.
+an instance of the class/ represent the "state"
+of the object.  You can set (assign)and get
+(retrieve) properties values on an object
+
+Methods define action an instance of a class
+can perform, usually on the object instance itself.
+
+You can create an instance of a class using the 
+new keyword. Think: "factroy".
+
+You can access the members of an object by using
+the member access operator, the dot (.)
+
+Conceptually, classes are dleegated a responsibility
+in the system or represent some domain concept
+in the system.
+
+Classes are ultimately custom data types, more complex
+than the simple data types we ve wrked with.
+Therefore you can use them anywhere you use other
+data types (like as input parameters opr return
+values from a method.)
+
+class Car{
+
+}
+Auto Implemented Properties - simple properties
+prop tab tab enter enter
+
+this keyword -Access a member of the current instance 
+of the class.
+
+public void MyMethod()
+{
+this.Year = 1976l;
+}
 
 Creating Class Files, Creating cohesive Classes and Code Navigation(cs-ASP_037)
 ==================================
