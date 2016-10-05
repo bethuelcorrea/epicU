@@ -488,6 +488,83 @@ many other tools and features
 Initial compilation to intermediate language, then a secon compilation
 just in time comilation an optimized version of the assembly for the.
 
+Understanding Namespaces and the using Directive (CS - ASP_040)
+============================================================
+Namespaces disambiguate class names inside of class libraries or applications
+
+you must reference class names by their full name:
+
+System.Text.Stringbuilder sb = new System.Text.StrinBuilder();
+...or, you can employ a using directive at the top the code file to
+instruct the compiler to look in those namespaces to find the class that is refernced.
+
+using System.Text
+StringBuilder sb = new StringBuilder();
+
+you must alwasys do this if the code youre writing is outside of
+the namespace of the class you want to use, even if its in the same
+project.
+
+Default namespace defined in project properties (right-clicking on
+project name in Solution Explorer, select Properites...)
+
+Creating class Libraries and Adding Reference to Assemblies (CS-ASP-041)
+===========================================================
+Class Library project - creates a .dll that can be feferenced in other projects
+
+add a reference - the FCL is split into tiny piece, and you must reference
+the assemblies that contain the parts of the library you want to use.
+
+Right clic kprojects Reference node in Solution Explorer, select Add Reference
+
+Accessibility Modifiers, Fields and Properties(CS-ASP_042)
+====================================================
+http://v.gd/access
+Public-Class or member can be accessed by any code
+Private-Class or member can only be accessed by parent class
+Protected-Class or member can only be accessed by parent class or derived class
+Internal-Class or member can only be accessed by code inside the same assembly
+
+Classes are internal by default
+Methods and properties are private by default
+
+Encapsulation- Hiding implementation behind public interfaces, reduces coupling
+increases plug-ability / resuability, maintainability, etc.
+
+private fields have two purposes:
+(1) reference to object or variable that used for internal implementation of class
+(2)hold the state of an object, backing field for public property
+
+propfull TAB TAB
+
+private int myField;
+property int MYProperty
+{
+ get{return myField;}
+ set{if (value>100)
+ myField = value;
+ else
+ //tell the caller that they cant do this
+ }
+ }
+ Full property definition and private fields to control
+ access to private fields / state of the object.
+ 
+ propg TAB TAB
+ 
+ public in MyProperty{get; private set;}
+ Restricts setting of property to just the class internal implementation
+ 
+ 
+}
+
+
+
+
+
+
+
+
 
 
 
