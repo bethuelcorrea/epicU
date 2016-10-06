@@ -396,6 +396,216 @@ string[] names = myString.Split(';');
 //Concatenating strings, immutablility
 //StringBuilder - memory efficient way of concatenation strings
 
+Instroduction to classes and Objects (CS-ASP_036)
+======================================================
+Class is acode block that defines a date type.
+An Object is an instance of a Class
+Metaphors:
+Blueprint vs Houses
+Recipe vs Cupcakes
+Pattern vs Bluejeans
+Cookie vs. Cookes
+
+Classes have members, like properties and Methods.
+an instance of the class/ represent the "state"
+of the object.  You can set (assign)and get
+(retrieve) properties values on an object
+
+Methods define action an instance of a class
+can perform, usually on the object instance itself.
+
+You can create an instance of a class using the 
+new keyword. Think: "factroy".
+
+You can access the members of an object by using
+the member access operator, the dot (.)
+
+Conceptually, classes are dleegated a responsibility
+in the system or represent some domain concept
+in the system.
+
+Classes are ultimately custom data types, more complex
+than the simple data types we ve wrked with.
+Therefore you can use them anywhere you use other
+data types (like as input parameters opr return
+values from a method.)
+
+class Car{
+
+}
+Auto Implemented Properties - simple properties
+prop tab tab enter enter
+
+this keyword -Access a member of the current instance 
+of the class.
+
+public void MyMethod()
+{
+this.Year = 1976l;
+}
+
+Creating Class Files, Creating cohesive Classes and Code Navigation(cs-ASP_037)
+==================================
+prefer more classes w/ narrowly defined responsibilities
+prefer to pu each class in its own file
+Prefer high cohession - similarity / sigleness of purpose of the class members
+To achieve high cohesion, a rule of thub:try to make your classes fit on
+one screen of your IDE(no scorlling required)
+
+understanding Object Refarences and Object Lifetim(cs-ASP_038)
+An object reference variable holds a reference to an instantied object
+in the computers memory.
+
+MyClass myObject;
+
+The new keyword creates an instance of the class and returns the address of 
+object in memory to the refernce variable.
+
+//myObject = new MyClass();
+mor than one object reference variable can hold an address to the object in memory.
+
+MyClass myOtherObjectReference = myObject;
+Each time a new reference is added, the reference count increases by one. each time
+an object refererence variable goes out of scope or is set to null, the reference
+count decreases by one
+
+if the reference count is zero, the .NET Framework Run
+
+Understanding the .NET Framework and Compilation(CS-ASP_039)
+the .NET Framework consists of:
+
+-Runtime(Common Language Runtime, CLR) :"protective bubble", manages memory,
+protects the users machine, etc.
+
+.Net Framework Class Library(fcl, Base Class Library, BCL) thousands
+of classes built by Microsoft for every imaginable purpose.
+
+Compilers (C# compiler, VB compiler)- turns your human readable source code into 
+(.exe executable, or .dll - class library)
+
+many other tools and features
+
+Initial compilation to intermediate language, then a secon compilation
+just in time comilation an optimized version of the assembly for the.
+
+Understanding Namespaces and the using Directive (CS - ASP_040)
+============================================================
+Namespaces disambiguate class names inside of class libraries or applications
+
+you must reference class names by their full name:
+
+System.Text.Stringbuilder sb = new System.Text.StrinBuilder();
+...or, you can employ a using directive at the top the code file to
+instruct the compiler to look in those namespaces to find the class that is refernced.
+
+using System.Text
+StringBuilder sb = new StringBuilder();
+
+you must alwasys do this if the code youre writing is outside of
+the namespace of the class you want to use, even if its in the same
+project.
+
+Default namespace defined in project properties (right-clicking on
+project name in Solution Explorer, select Properites...)
+
+Creating class Libraries and Adding Reference to Assemblies (CS-ASP-041)
+===========================================================
+Class Library project - creates a .dll that can be feferenced in other projects
+
+add a reference - the FCL is split into tiny piece, and you must reference
+the assemblies that contain the parts of the library you want to use.
+
+Right clic kprojects Reference node in Solution Explorer, select Add Reference
+
+Accessibility Modifiers, Fields and Properties(CS-ASP_042)
+====================================================
+http://v.gd/access
+Public-Class or member can be accessed by any code
+Private-Class or member can only be accessed by parent class
+Protected-Class or member can only be accessed by parent class or derived class
+Internal-Class or member can only be accessed by code inside the same assembly
+
+Classes are internal by default
+Methods and properties are private by default
+
+Encapsulation- Hiding implementation behind public interfaces, reduces coupling
+increases plug-ability / resuability, maintainability, etc.
+
+private fields have two purposes:
+(1) reference to object or variable that used for internal implementation of class
+(2)hold the state of an object, backing field for public property
+
+propfull TAB TAB
+
+private int myField;
+property int MYProperty
+{
+ get{return myField;}
+ set{if (value>100)
+ myField = value;
+ else
+ //tell the caller that they cant do this
+ }
+ }
+ Full property definition and private fields to control
+ access to private fields / state of the object.
+ 
+ propg TAB TAB
+ 
+ public in MyProperty{get; private set;}
+ Restricts setting of property to just the class internal implementation
+ }
+ 
+ Creating Contructor Methods (CS-ASP-043)
+ Constructor are called at the moment of instantitation.
+ Used to put the new instace of the class into a valid state.
+ public class Foo
+{
+ public Foo()
+ {
+ .....
+ }
+}
+Whether you difine it or not, theres a default constructor.
+You can override the default (no input parameters)or 
+overload the constructor to allow the user to set the 
+new instace to a valid state.
+
+Nameing Conventions for Identifiers(CS-ASP_044)
+pascalCase - public
+camelCase- private , protected
+
+public classes, methods and properties - PascalCase
+Private helper methods, input parameters -camelCase
+locally scoped variables- camelCase
+Private field - camelCase prefixed s/ underscore:_firstName
+
+Choose long, memorable, understandable names
+that convey meaning / intent.
+
+Static versus Instance Members(CS-ASP_045)
+=======================================
+Static members - no instance of the class required to call method
+
+Instance member - must create an instance w new keyword to call methods and properties
+
+Can mix both in the same class, but conat reference instance
+members from inside of static members.
+
+Classes can be decaoted w/ staic keyword... all members must be static, cant creat a new instance of that class
+
+System.Math
+http://v.gd/static
+
+
+
+
+
+
+
+
+
+
 
 
 
