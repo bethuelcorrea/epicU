@@ -597,6 +597,108 @@ Classes can be decaoted w/ staic keyword... all members must be static, cant cre
 System.Math
 http://v.gd/static
 
+Working with the list Collection(CS-ASP-046)
++++++++++++++++++++++++++++++++++++++++++++++++++
+use Generic Collection to work with items in a strongly typed fashion.
+
+Better that arrays;
+Know the type of the item for a certainty, no castion / coverting
+Better performance inserting/ removing / updating
+Colllections provide more flexivle otions to access items in the collection
+Allows for LINQ extension methods
+
+many diffeent collection - specialties
+
+"Beneric Collections"
+list<T>
+Dictionsary<Tkey, Tvalue>
+T=> data type you need
+"you make a generic specific by providing a data type."
+
+List<string> only sotre strings (strong typed)
+List<Car> - only store Cars in that collection
+
+//Assume I have three objects: car1, car2, car3
+List<Car> cars = new ist<Car>():
+cars.add(car1);
+cars.add(car2);
+cars.add(car3);
+
+Int numberOfCars = cars.Count;
+Car myCar = cars.ElementAt(1); Return 2nd car in the collection
+//Terminoloty: you access a member of a collection
+
+object Initializer(Cs-ASP_047)
+++++++++++++++++++++++++++++++++++++++
+concise way to initialize a new object(or collection)with values.
+
+//Didnt talk about this form:
+
+Collection Initializer(CS-ASP-048)
+=================================
+Shirt cut to creat newinstance of a generic collection and 
+initialized it by immendiately adding new instance of a given type.
+
+list<Car>
+
+working with the Dictionary<Tkey, TValue> collection(cs-ASP_049)
+Dictionary allows you to use a key to access amember of the collection
+Think: webster's dictionay... the word(key), then the definition (instance of a given type)
+key is anything meaningful in your system.
+Key must be unique.
+
+Tkey =>type of the key
+Tvalue= type of the value
+
+Dictionary<string, Car> cars = new Dictionary<string, Car>();
+cars.Add("v123", new Car{Make="bmw", Model="mazda"});
+
+cars.ElementAt(1).Key //
+cars.ElementAt(1).Value//return the car object in the 2nd position
+
+//Beter way to access Dictionary...
+Car v2;
+if(cars.TryGetValue("v234", out v2))
+{
+retult +=v2.Year;
+}
+//Remove
+if (cars.Remove(v345))
+{
+resi;t +="Successfully removed car";
+}
+
+Looping with the foreach Iteration statement(CS-ASP_050)
+===============================================
+More elegant way of iteration through collection.
+code snippet: froeach TAB TAB
+foreach (Car car in cars)
+{
+result +=car.Make;
+}
+
+Implictyly typed local Variables with the var keyword(CS-ASP_051)
+============================================================
+(Applies to locally scoped variable declarations)
+Compiler is smart enough to figure out the data type when you initialize the variable.
+Becomes increasingly important because sometimes its difficult to know what the dat type
+is supposed to be (LINQ)
+int hitPoints = 0;
+...is the equivalent of ...
+var hitPoints = 0;
+
+string heroName = "Pentagorn";
+...is the equivalent of .....
+var heroName ="Pentagorn"
+
+var cars = new List<Car>()
+{
+...
+}
+Rules
+1. Must initialize the variable
+2. Variable is permaenty set to the implicti dat type.
+3. Cant be used for a public property/ variable
 
 
 
