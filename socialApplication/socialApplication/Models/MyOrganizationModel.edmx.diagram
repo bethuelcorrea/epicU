@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c9162b3cacc6428388bb19a2cbdddfc2" Name="Diagram1">
+        <EntityTypeShape EntityType="EpicUModel.Friend" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EpicUModel.Member" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EpicUModel.Post" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EpicUModel.Unlike" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
+        <AssociationConnector Association="EpicUModel.FK_Friends_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="EpicUModel.FK_Posts_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="EpicUModel.FK_Unlikes_Posts" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="EpicUModel.Like" Width="1.5" PointX="5.25" PointY="3.5" />
+        <AssociationConnector Association="EpicUModel.FK_Likes_Members" />
+        <AssociationConnector Association="EpicUModel.FK_Likes_Posts" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,12 @@
+﻿body {
+}
+
+.carousel-inner > .item 
+{
+    text-align:center;
+}
+
+#postContent{
+text-align:center;
+background-color:red;
+}

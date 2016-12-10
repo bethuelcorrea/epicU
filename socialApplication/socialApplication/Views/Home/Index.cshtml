@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<br />
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <!--image one -->
+            <div id="iframe" class="item active">
+                <iframe  width="660" height="415" src="https://www.youtube.com/embed/aBL_LuwReik" frameborder="0" allowfullscreen></iframe>
+                
+                <div class="container">
+                    <div class="carousel-caption">
+                        <!--for overlade content if needed -->
+
+                        <p><a class="btn btn-large btn-primary" href="#">Share With Friends</a></p>
+                    </div>
+                </div>
+            </div>
+            <!--start of image number two -->
+            <div class="item">
+                <iframe width="660" height="415" src="https://www.youtube.com/embed/3tRIrbJaxOA" frameborder="0" allowfullscreen></iframe>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <!--for overlade content if needed -->
+                        <p><a class="btn btn-large btn-primary" href="#">Share With Friends</a></p>
+                    </div>
+                </div>
+            </div>
+            <!--start of image number 3 -->
+            <div class="item">
+                <iframe width="660" height="415" src="https://www.youtube.com/embed/pnP_f-ffCuc" frameborder="0" allowfullscreen></iframe>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <!--<h1>Travis Classics</h1>
+                        <p>Pride of Cleburne Tx </p>-->
+                        <p><a class="btn btn-large btn-primary" href="#">Share With Friends</a></p>
+                    </div>
+                </div>
+            </div>
+            <!--end of the image gallery -->
+
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+    </div>
+
+
+<div class="row">
+    <div class="col-md-5">
+        <h2>Share Tube Vids</h2>
+        <p>
+           <img src="~/images/sharetubevids.png"/>
+        </p>
+        
+    </div>
+    <div class="col-md-7">
+        <h2>Share Vid with buddies</h2>
+        <ul>
+            <li>Make a collection of your awesome online videos and share it with your friends. </li>
+            <li>Have your friend see your collection of vids</li>
+            <li>Can't remember that video you saw last week. Just share and you won't forget.</li>
+            <li>Won't offend anybody</li>
+        </ul>
+        <p><a class="btn btn-default" href="#">Try it &raquo;</a></p>
+    </div>
+    
+</div>

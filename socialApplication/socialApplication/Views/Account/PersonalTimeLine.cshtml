@@ -1,0 +1,44 @@
+﻿@model TimeLineViewModel
+
+@*AppUser.Current.MemberId ..>this is to access login user*@<br/>
+<div style="text-align:center;">
+    <a href='@Url.Action("Post", "Account")'><img src="~/images/comment.png" /></a>
+    <a href='@Url.Action("Main", "Home")'>    <img src="~/images/timeline.png" /></a>    
+</div>
+@foreach (var post in Model.Posts.Where(x => x.MemberId == AppUser.Current.MemberId).OrderByDescending(p => p.PostId))
+{
+    <div>
+       
+        <div style="text-align:center;">
+            <iframe type="text/html" width="640" height="385" src="@post.VideoUrl" frameborder="0"></iframe> <br />
+            <a href="@post.VideoUrl">Link of vid</a>
+        </div> 
+        <br />
+
+        <div style="text-align:left;width:30%;margin:auto;">
+            <span>
+
+               
+                @Model.Likes.Where(c => c.PostId == post.PostId).Select(x => x.IsLiked == true).Count()
+                <img src="~/images/tumbsup.png" width="25" class="btn-like" data-id="@post.PostId" />
+                    
+                  
+                   
+                 @Model.Likes.Where(c => c.PostId == @post.PostId).Select(x => x.IsLiked == false).Count()                            
+                <img src="~/images/tumbsdown.png" width="25" class="btn-unlike"  data-id="@post.PostId" /><br />
+
+                <span>Posted By:</span>
+
+                @Model.Members.Where(x => x.MemberId == post.MemberId).Select(p => p.FirstName + " " + p.LastName).FirstOrDefault()<br />
+                Date: @post.PostDate
+            </span> <br />
+
+            <span>Comments:</span><br />
+            <span>@post.Comment</span>
+            <br /><br />
+
+            </div>
+        </div>
+}
+
+
