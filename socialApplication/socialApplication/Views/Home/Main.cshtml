@@ -27,10 +27,10 @@
         <div style="text-align:left;width:30%;margin:auto;">
             <span>
 
-                @liketable.Where(x => x.PostId == @items.PostId).Select(x =>x.IsLiked ==  true).Count()
+                @liketable.Where(p => p.PostId == @items.PostId && p.IsLiked == true).Count()              
                 <img src="~/images/tumbsup.png" width="25" class="btn-like" data-id="@items.PostId" />
 
-                @liketable.Where(x => x.PostId == @items.PostId ).Select(x => x.IsLiked == false).Count()
+                @liketable.Where(p => p.PostId == @items.PostId && p.IsLiked == false).Count()
                 <img src="~/images/tumbsdown.png" width="25" class="btn-unlike" data-id="@items.PostId" /><br />
 
                 <span>Posted By:</span>

@@ -18,13 +18,12 @@
         <div style="text-align:left;width:30%;margin:auto;">
             <span>
 
-               
-                @Model.Likes.Where(c => c.PostId == post.PostId).Select(x => x.IsLiked == true).Count()
+                @Model.Likes.Where(p => p.PostId == @post.PostId && p.IsLiked == true ).Count()                 
                 <img src="~/images/tumbsup.png" width="25" class="btn-like" data-id="@post.PostId" />
                     
                   
                    
-                 @Model.Likes.Where(c => c.PostId == @post.PostId).Select(x => x.IsLiked == false).Count()                            
+                @Model.Likes.Where(p => p.PostId == @post.PostId && p.IsLiked == false).Count()                          
                 <img src="~/images/tumbsdown.png" width="25" class="btn-unlike"  data-id="@post.PostId" /><br />
 
                 <span>Posted By:</span>
