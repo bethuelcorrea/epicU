@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Read";
+}
+
+<h2>Read</h2>
+
+
+@using (Html.BeginForm("ReadRecord", "Home", FormMethod.Get))
+{
+    @Html.Label("Enter Id Here") <br />
+    @Html.TextBox("Id") <br />
+
+    @Html.Label("Name:")<br />
+    if(ViewData["N"] != null)
+    {
+        <span>@ViewData["N"].ToString()</span><br />
+    }
+
+    @Html.Label("Age:")<br />
+
+    if(ViewData["A"] != null)
+    {
+        <span>@ViewData["A"].ToString()</span><br />
+    }
+     
+    <input type="submit" value="GetRecord" class="btn btn-default" />
+}

@@ -67,6 +67,7 @@ namespace socialApplication.Controllers
             return RedirectToAction("Main", "Home");
         }
 
+        // this load the Cookie Member Id to the post form. The Id is hidden
         public ActionResult Post()
         {
             EpicUEntities db = new EpicUEntities();
